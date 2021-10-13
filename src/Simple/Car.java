@@ -21,6 +21,11 @@ public void fly()
 {
 	System.out.println("This is for flying");
 }
+
+public void jump()
+{
+	System.out.println("This is for jumping");
+}
 	public static void main(String[] args) {
 		
 Vehicle p=new Car();
@@ -30,6 +35,7 @@ p.stop();//Using upcasting can access the child overloaded methods
 //p.music(); /*Using upcasting cannot access the child methods(which are not overridden) with parent reference */
 p.horn();//Using upcasting can access the parent methods
 s.fly();
+s.jump();
 System.out.println(p.name);//overloaded child variablees can be accessed
 System.out.println(p.address); //parent class variables can be accessed
 /*System.out.println(p.mobileno);//child class variavles cannot be accesed by parent reference */
